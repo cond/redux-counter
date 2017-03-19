@@ -1,14 +1,14 @@
 import React from 'react'
 
-const CounterView = () => {
+const CounterView = ({count, onClickAdd1, onClickSub1, onClickReset}) => {
     return (
 	<div>
 	    <div>
-	    {100}
+	    {count}
 	    </div>
-	    <button>+1</button>
-	    <button>-1</button>
-	    <button>Reset</button>
+	    <button onClick={() => {onClickAdd1()}}>+1</button>
+	    <button onClick={() => onClickSub1()}>-1</button>
+	    <button onClick={() => onClickReset()}>>Reset</button>
 	</div>
     )
 }

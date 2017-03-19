@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import CounterView from './components/CounterView'
+import Counter from './containers/Counter'
 
 class App extends Component {
   render() {
     return (
-	<CounterView />
+	<Counter />
     );
   }
 }
